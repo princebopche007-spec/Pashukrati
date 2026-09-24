@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Log in — Pashukrati</title>
+<meta name="description" content="Log in or create a Pashukrati account.">
+<meta name="theme-color" content="#16311D">
+<link rel="icon" type="image/webp" href="../assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+<script src="../js/theme-boot.js"></script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main" class="page">
+  <h1 id="title">Log in</h1>
+  <p class="lede" id="sub">Welcome back.</p>
+  <p id="msg" class="notice" role="status" hidden></p>
+  <form id="authForm" class="form" novalidate>
+    <label>Email<input name="email" type="email" autocomplete="email" required></label>
+    <label id="pwWrap">Password<input name="password" type="password" autocomplete="current-password" required minlength="8"></label>
+    <button class="btn btn--primary" type="submit" id="submitBtn">Log in</button>
+    <button class="btn btn--ghost" type="button" id="googleBtn">Continue with Google</button>
+    <div class="row fine">
+      <button class="link-btn" type="button" id="switchBtn">Create an account</button>
+      <button class="link-btn" type="button" id="forgotBtn">Forgot password?</button>
+    </div>
+  </form>
+  <form id="resetForm" class="form" hidden novalidate>
+    <label>New password<input name="password" type="password" autocomplete="new-password" required minlength="8"></label>
+    <button class="btn btn--primary" type="submit">Set new password</button>
+  </form>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="../js/pages/login.js"></script>
+</body>
+</html>

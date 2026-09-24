@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support — Pashukrati</title>
+<meta name="description" content="Contribute to Pashukrati securely with UPI, cards or netbanking.">
+<meta name="theme-color" content="#16311D">
+<link rel="icon" type="image/webp" href="../assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+<script src="../js/theme-boot.js"></script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main" class="page">
+  <h1>Support Pashukrati</h1>
+  <p class="lede">Contribute by UPI, card, netbanking or wallet. Payments are processed securely by Razorpay — we never see your card details.</p>
+  <p id="msg" class="notice" role="status" hidden></p>
+  <form id="donateForm" class="form" novalidate>
+    <div>
+      <span id="amtLabel" style="font-weight:500">Amount (₹)</span>
+      <div class="chips" role="group" aria-labelledby="amtLabel" style="margin:8px 0 12px">
+        <button type="button" class="chip" data-amt="100" aria-pressed="false">₹100</button>
+        <button type="button" class="chip" data-amt="500" aria-pressed="false">₹500</button>
+        <button type="button" class="chip" data-amt="1000" aria-pressed="true">₹1,000</button>
+        <button type="button" class="chip" data-amt="2500" aria-pressed="false">₹2,500</button>
+      </div>
+      <input id="amount" name="amount" type="number" inputmode="numeric" min="10" max="500000" step="1" value="1000" required aria-labelledby="amtLabel">
+    </div>
+    <label>Name<input name="name" autocomplete="name" required maxlength="100"></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required maxlength="200"></label>
+    <label>Note (optional)<textarea name="note" rows="2" maxlength="300"></textarea></label>
+    <button class="btn btn--primary" type="submit" id="payBtn">Continue to payment</button>
+    <p class="fine">Minimum ₹10.</p>
+  </form>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="../js/pages/donate.js"></script>
+</body>
+</html>
