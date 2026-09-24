@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gallery — Pashukrati</title>
+<meta name="description" content="Photos and videos from Pashukrati.">
+<meta name="theme-color" content="#16311D">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+<script src="js/theme-boot.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main" class="page">
+  <h1>Gallery</h1>
+  <p class="lede">Photos and videos from our work.</p>
+  <div id="grid" class="gallery" aria-live="polite">Loading…</div>
+  <dialog class="lightbox" id="lightbox" aria-label="Media viewer">
+    <div class="lightbox__stage" id="stage"></div>
+    <div class="lightbox__foot"><span id="cap"></span><button class="btn btn--ghost btn--sm" id="closeBox" type="button">Close</button></div>
+  </dialog>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="js/pages/gallery.js"></script>
+</body>
+</html>

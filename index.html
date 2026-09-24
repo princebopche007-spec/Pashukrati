@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pashukrati — Sowing the seeds of conservation & awareness</title>
+<meta name="description" content="Pashukrati: conservation and awareness for wildlife and companion animals.">
+<meta name="theme-color" content="#16311D">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+<script src="js/theme-boot.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="scene">
+      <img class="day" id="imgDay" src="assets/day.jpg" alt="A sunlit forest stream where a deer, rabbit, turtle, golden retriever and macaw share a green valley." decoding="async" fetchpriority="high">
+      <img class="night" id="imgNight" src="assets/night.jpg" alt="The same valley under a full moon, with fireflies over the stream and the animals resting." decoding="async" aria-hidden="true">
+      <canvas id="fireflies" aria-hidden="true"></canvas>
+    </div>
+    <div class="hero__inner">
+      <h1 id="hero-title">Sowing the seeds of conservation &amp; awareness</h1>
+      <p class="hero__lede">A home for wildlife, companion animals and the people who care for them.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="blog.html">Read our stories</a>
+        <a class="btn btn--glass" href="donate.html">Support our work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="h-stories">
+    <div class="band__inner">
+      <div class="band__head"><h2 id="h-stories">Stories</h2><a class="btn btn--ghost btn--sm" href="blog.html">All stories</a></div>
+      <div id="homePosts" class="cards" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="h-gallery">
+    <div class="band__inner">
+      <div class="band__head"><h2 id="h-gallery">Gallery</h2><a class="btn btn--ghost btn--sm" href="gallery.html">Full gallery</a></div>
+      <div id="homeGallery" class="gallery" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="h-support">
+    <div class="band__inner">
+      <div class="band__head"><h2 id="h-support">Support Pashukrati</h2></div>
+      <p class="lede">Every contribution helps us keep growing conservation and awareness work.</p>
+      <a class="btn btn--primary" href="donate.html">Contribute</a>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script type="module" src="js/pages/index.js"></script>
+</body>
+</html>
